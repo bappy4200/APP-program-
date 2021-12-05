@@ -1,0 +1,192 @@
+import 'package:flutter/material.dart';
+class homepage extends StatelessWidget {
+  const homepage({ Key? key }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Center(child: Text("Dialpad")),
+        leading: Icon(Icons.menu),
+        actions: [Icon(Icons.call)],
+      ),
+
+      body:
+       Column(
+         
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        children: [
+          Row(
+            children: [
+              Expanded(
+                child: Container(
+                  height: 180,
+                  decoration: BoxDecoration(color: Colors.orange),
+                ),
+              )
+            ],
+          ),
+          Row(
+            
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                   height: 100,
+            width: 200,
+            decoration: BoxDecoration(
+                shape: BoxShape.rectangle,color: Colors.lightGreen
+            ),
+                  child: Text("        1", style: TextStyle(fontSize: 40, color: Colors.black87),)),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+            height: 100,
+            width: 200,
+            decoration: BoxDecoration(
+                shape: BoxShape.rectangle,color: Colors.lightBlueAccent
+            ),
+                  child: Text("        2", style: TextStyle(fontSize: 40, color: Colors.black87),)),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                 height: 100,
+            width: 200,
+            decoration: BoxDecoration(
+                shape: BoxShape.rectangle,color: Colors.yellow
+            ),
+                  child: Text("        3", style: TextStyle(fontSize: 40, color: Colors.black87),)),
+              ),
+            ],
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                    height: 100,
+            width: 200,
+            decoration: BoxDecoration(
+                  shape: BoxShape.rectangle,color: Colors.yellowAccent
+            ),
+                
+                  child: Text("        4", style: TextStyle(fontSize: 40, color: Colors.black87),)),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                    height: 100,
+            width: 200,
+            decoration: BoxDecoration(
+                shape: BoxShape.rectangle,color: Colors.greenAccent
+            ),
+              
+                  child: Text("        5", style: TextStyle(fontSize: 40, color: Colors.black87),)),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                    height: 100,
+            width: 200,
+            decoration: BoxDecoration(
+                shape: BoxShape.rectangle,color: Colors.redAccent
+            ),
+              
+                  child: Text("        6", style: TextStyle(fontSize: 40, color: Colors.black87),)),
+              ),
+
+            ],
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+             Padding(
+               padding: const EdgeInsets.all(8.0),
+               child: Container(
+                   height: 100,
+            width: 200,
+            decoration: BoxDecoration(
+                shape: BoxShape.rectangle,color: Colors.redAccent
+            ),
+              
+                 child: Text("        7", style: TextStyle(fontSize: 40, color: Colors.black87),)),
+             ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                    height: 100,
+            width: 200,
+            decoration: BoxDecoration(
+                shape: BoxShape.rectangle,color: Colors.lightBlue
+            ),
+              child: Text("        8", style: TextStyle(fontSize: 40, color: Colors.black87),)),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                    height: 100,
+            width: 200,
+            decoration: BoxDecoration(
+                shape: BoxShape.rectangle,color: Colors.yellow
+            ),
+              child: Text("        9", style: TextStyle(fontSize: 40,color: Colors.black87),)),
+              ),
+            ],
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+             Padding(
+               padding: const EdgeInsets.all(8.0),
+               child: Container(
+                   height: 100,
+            width: 200,
+            decoration: BoxDecoration(
+                shape: BoxShape.rectangle,color: Colors.blueAccent
+            ),
+              
+                 child: Text("        *", style: TextStyle(fontSize: 40, color: Colors.black87),)),
+             ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                    height: 100,
+            width: 200,
+            decoration: BoxDecoration(
+                shape: BoxShape.rectangle,color: Colors.lightGreen
+            ),
+              
+                  child: Text("        0", style: TextStyle(fontSize: 40, color: Colors.black87),)),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                    height: 100,
+            width: 200,
+            decoration: BoxDecoration(
+                shape: BoxShape.rectangle,color: Colors.red
+            ),
+              
+                  child: Text("        #", style: TextStyle(fontSize: 40,  color: Colors.black87),)),
+              ),
+            ],
+          ),
+          Container( 
+            height: 50,
+            width: 80,
+            decoration: BoxDecoration(
+              shape: BoxShape.rectangle,color: Colors.green
+            ),
+            
+            child: Text("Call",style: TextStyle(fontSize: 40, color: Colors.black87,),)),
+
+        ],
+      ),
+      
+    );
+  }
+}
